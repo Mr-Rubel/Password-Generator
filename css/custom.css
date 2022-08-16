@@ -49,7 +49,7 @@ label {
     user-select: none;
 }
 
-#btn {
+#btn,#copy-btn {
     width: 100%;
     font-size: 20px;
     outline: 0;
@@ -59,4 +59,5 @@ label {
     color: white;
     margin-top: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
