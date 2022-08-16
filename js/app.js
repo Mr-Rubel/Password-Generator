@@ -62,4 +62,5 @@ function truncateString(str, num) {
 copyText.onclick = function(){
     passBox.select();
     Document.execCommand('copy');
+    alert('');
 };
