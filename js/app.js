@@ -59,8 +59,18 @@ function truncateString(str, num) {
     }
 }
 
-copyText.onclick = function(){
-    passBox.select();
-    Document.execCommand('copy');
-    alert('');
-};
+var copyTextareaBtn = document.querySelector('#copy-btn');
+
+copyTextareaBtn.addEventListener('click', function(event) {
+  var copyTextarea = document.querySelector('#pass-box');
+  copyTextarea.focus();
+  copyTextarea.select();
+
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    alert('Copying text command was ' + msg);
+  } catch (err) {
+    alert('Oops, unable to copy');
+  }
+});
