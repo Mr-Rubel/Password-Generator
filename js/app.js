@@ -10,6 +10,7 @@ const upperInput = document.getElementById("upper-case")
 const lowerInput = document.getElementById("lower-case")
 const numberInput = document.getElementById("numbers")
 const symbolInput = document.getElementById("symbols")
+const copyText = document.getElementById("copy-btn")
 
 
 
@@ -57,3 +58,8 @@ function truncateString(str, num) {
         return str;
     }
 }
+
+copyText.onclick = function(){
+    passBox.select();
+    document.execCommand('copy');
+};
