@@ -11,11 +11,11 @@ input:focus-visible {
 }
 
 .main {
-    background-color: #3498db;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background-color: #000;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .box {
